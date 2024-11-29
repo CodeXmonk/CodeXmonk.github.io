@@ -1,5 +1,11 @@
 // variables
 // --------------------------
+//@use "sass:math";
+@use 'functions' as *;
+// @forward "fontawesome";
+// @forward "brands";
+// @forward "solid";
+// @forward "core";
 
 $fa-css-prefix          : fa !default;
 $fa-style               : 900 !default;
@@ -34,7 +40,9 @@ $fa-sizes: (
 ) !default;
 
 $fa-li-width            : 2em !default;
-$fa-li-margin           : $fa-li-width * fa-divide(5, 4) !default;
+//cxm ORIG $fa-li-margin           : $fa-li-width * fa-divide(5, 4) !default;
+$fa-li-margin : (fa-divide(5em, 4)) !default;
+$fa-li-margin           : $fa-li-width * $fa-li-margin;
 
 $fa-pull-margin         : .3em !default;
 

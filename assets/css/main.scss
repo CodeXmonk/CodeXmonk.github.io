@@ -1,25 +1,39 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
+//# Only the main Sass file needs front matter (the dashes are enough)
+
 @charset "utf-8";
 
 // Dimensions
 $max-content-width: {{ site.max_width }};
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv",
-  "tabs",
-  "typograms",
-  "font-awesome/fontawesome",
-  "font-awesome/brands",
-  "font-awesome/solid",
-  "font-awesome/regular",
-  "tabler-icons/tabler-icons.scss",
-  "tabler-icons/tabler-icons-filled.scss",
-  "tabler-icons/tabler-icons-outline.scss"
-;
+@use 'variables' as *;
+@use 'themes' as *;
+@use 'layout' as *;
+@use 'base' as *;
+@use 'distill' as *;
+@use 'cv' as *;
+@use 'tabs' as *;
+@use 'typograms' as *;
+@use 'font-awesome/fontawesome' as *;
+@use 'tabler-icons/tabler-icons.scss' as *;
+@use 'tabler-icons/tabler-icons-filled.scss' as *;
+@use 'tabler-icons/tabler-icons-outline.scss' as *;
+
+// cxm ORIG   @import
+// cxm ORIG "variables",
+// cxm ORIG  "themes",
+// cxm ORIG  "layout",
+// cxm ORIG  "base",
+// cxm ORIG  "distill",
+// cxm ORIG  "cv",
+// cxm ORIG  "tabs",
+// cxm ORIG  "typograms",
+// cxm ORIG  "font-awesome/fontawesome",
+// cxm ORIG  "font-awesome/brands",
+// cxm ORIG  "font-awesome/solid",
+// cxm ORIG  "font-awesome/regular",
+// cxm ORIG   "tabler-icons/tabler-icons.scss",
+// cxm ORIG   "tabler-icons/tabler-icons-filled.scss",
+// cxm ORIG   "tabler-icons/tabler-icons-outline.scss"
+//;

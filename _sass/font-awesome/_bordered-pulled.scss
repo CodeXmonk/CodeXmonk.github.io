@@ -1,5 +1,7 @@
 // bordered + pulled icons
 // -------------------------
+@use 'variables' as *;
+//@use 'functions' as *;
 
 .#{$fa-css-prefix}-border {
   border-color: var(--#{$fa-css-prefix}-border-color, #{$fa-border-color});

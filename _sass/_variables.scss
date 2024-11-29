@@ -2,8 +2,10 @@
  * Variables used throughout the theme.
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
-
 @use "sass:color";
+//@use "variables" as *;
+
+$cxm_max_content_width: 930px;
 
 // Colors
 $red-color: #ff3636 !default;

@@ -1,0 +1,4 @@
+// scss/1-globals/_fa.scss
+@forward 'fontawesome';
+@forward 'solid' as fas-*; // Prefixed to prevent conflicts
+
