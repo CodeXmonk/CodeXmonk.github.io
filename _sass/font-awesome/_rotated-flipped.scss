@@ -1,7 +1,5 @@
 // rotating + flipping icons
 // -------------------------
-@use 'variables' as *;
-//@use 'functions' as *;
 
 .#{$fa-css-prefix}-rotate-90 {
   transform: rotate(90deg);

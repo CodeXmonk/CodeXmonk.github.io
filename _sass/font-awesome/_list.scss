@@ -1,17 +1,9 @@
 // icons in a list
 // -------------------------
-@use 'variables' as *;
-@use 'functions' as *;
-//@use "sass:math";
-
-
-//$fa-li-margin : (fa-divide(5em, 4)) !default;
-//$fa-li-margin           : $fa-li-width * $fa-li-margin;
 
 .#{$fa-css-prefix}-ul {
   list-style-type: none;
-// cxm ORIG margin-left: var(--#{$fa-css-prefix}-li-margin, #{$fa-li-margin});
-  margin-left: var(--#{$fa-css-prefix}-li-margin);
+  margin-left: var(--#{$fa-css-prefix}-li-margin, #{$fa-li-margin});
   padding-left: 0;
 
   > li { position: relative; }
